@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.className+=' js';</script>
+<title>Odyssey Works — AI, Blockchain &amp; Digital-Asset Advisory for Enterprise &amp; Government</title>
+<meta name="description" content="Board-level advisory at the convergence of AI, blockchain, and digital assets. Led by the former Chief Commercial Officer of Cardano / IOHK — $3B+ in enterprise pursuits won, $60M+ staked, 270+ validators live. Book a confidential consultation.">
+<meta property="og:title" content="Odyssey Works — AI, Blockchain &amp; Digital-Asset Advisory">
+<meta property="og:description" content="From pilots to production in AI, blockchain, and tokenized assets. Led by the former CCO of Cardano / IOHK.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<style>/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/5991f529.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/6786a1e2.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/909ba065.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/5991f529.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/6786a1e2.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/909ba065.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/5991f529.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/6786a1e2.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/909ba065.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/5991f529.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/6786a1e2.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/909ba065.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/c86e64b3.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/3a26618b.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/85008942.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/426c65b1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/cbd2ff06.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/b9724895.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+:root{
+  --bg:#0A0F1A;
+  --bg-2:#0E1524;
+  --bg-3:#111B2E;
+  --surface:#16243C;
+  --border:rgba(168,176,198,0.13);
+  --border-soft:rgba(168,176,198,0.07);
+  --text:#E6EAF3;
+  --text-2:#9EA9BC;
+  --text-3:#727F92;
+  --muted:#48515F;
+  --mint:#E8584A;
+  --mint-deep:#C8443A;
+  --mint-wash:rgba(232,88,74,0.08);
+  --g1:#F4A24C;
+  --g2:#E8584A;
+  --g3:#B0547F;
+  --grad:linear-gradient(105deg,#F6AE5C 0%,#E8584A 42%,#D2507A 74%,#B0547F 100%);
+  --sans:'Space Grotesk',system-ui,sans-serif;
+  --mono:'Space Mono',ui-monospace,monospace;
+  --max:1280px;
+  --rule:1px solid var(--border);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  font-weight:400;
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+::selection{background:var(--mint);color:var(--bg)}
+
+/* ── layout ── */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 40px}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+
+/* ── mono label ── */
+.label{
+  font-family:var(--mono);
+  font-size:12px;
+  font-weight:400;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--mint);
+  display:inline-flex;
+  align-items:center;
+  gap:14px;
+}
+.label .sec{color:var(--mint)}
+.label .dash{width:36px;height:1px;background:var(--mint);opacity:0.5;display:inline-block}
+.label.dim{color:var(--text-3)}
+.label.dim .dash{background:var(--text-3)}
+
+/* ── headings ── */
+.h-xl{
+  font-family:var(--sans);
+  font-weight:700;
+  font-size:clamp(2.8rem,7vw,6rem);
+  line-height:0.94;
+  letter-spacing:-0.045em;
+  text-transform:uppercase;
+}
+.h-lg{
+  font-family:var(--sans);
+  font-weight:700;
+  font-size:clamp(2.1rem,4.5vw,3.6rem);
+  line-height:0.98;
+  letter-spacing:-0.035em;
+  text-transform:uppercase;
+}
+.lede{
+  font-size:1.15rem;
+  line-height:1.55;
+  color:var(--text-2);
+  max-width:60ch;
+  font-weight:400;
+}
+
+/* ── nav ── */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:22px 0;
+  transition:background .3s,border-color .3s,padding .3s;
+  border-bottom:1px solid transparent;
+}
+#nav.scrolled{
+  background:rgba(10,15,26,0.85);
+  backdrop-filter:blur(18px) saturate(130%);
+  -webkit-backdrop-filter:blur(18px) saturate(130%);
+  border-bottom-color:var(--border-soft);
+  padding:16px 0;
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:40px}
+.brand{display:flex;align-items:center;gap:12px}
+.nav-ticker{
+  display:flex;align-items:center;gap:11px;
+  margin-left:18px;padding-left:18px;
+  border-left:1px solid var(--border);
+  font-family:var(--mono);font-size:11.5px;
+  letter-spacing:0.12em;text-transform:uppercase;color:var(--text-3);
+  white-space:nowrap;
+}
+.nav-ticker .sep{color:var(--muted)}
+.nav-ticker .dot{flex-shrink:0}
+.brand-mark{
+  height:30px;width:auto;
+  display:block;flex-shrink:0;
+}
+.brand-name{
+  font-family:var(--sans);
+  font-weight:700;
+  font-size:1.05rem;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  color:var(--text);
+  line-height:1;
+}
+.nav-cta{
+  font-family:var(--mono);
+  font-size:12px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--text);
+  padding:9px 18px;
+  border:1px solid var(--border);
+  transition:border-color .2s,background .2s,color .2s;
+}
+.nav-cta:hover{border-color:var(--mint);color:var(--mint)}
+
+/* ── menu button ── */
+.menu-btn{
+  display:inline-flex;align-items:center;gap:11px;
+  font-family:var(--mono);font-size:12px;font-weight:700;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--text);
+  background:none;cursor:pointer;
+  padding:9px 16px;
+  border:1px solid var(--border);
+  transition:border-color .2s,color .2s;
+}
+.menu-btn:hover{border-color:var(--mint);color:var(--mint)}
+.menu-btn-bars{display:inline-flex;flex-direction:column;gap:4px;width:16px}
+.menu-btn-bars span{display:block;height:1.5px;width:100%;background:currentColor;transition:transform .3s,opacity .3s}
+body.menu-open .menu-btn-bars span:first-child{transform:translateY(2.75px) rotate(45deg)}
+body.menu-open .menu-btn-bars span:last-child{transform:translateY(-2.75px) rotate(-45deg)}
+
+/* ── menu overlay ── */
+.menu-overlay{
+  position:fixed;inset:0;z-index:200;
+  background:rgba(10,15,26,0.62);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  opacity:0;visibility:hidden;
+  transition:opacity .35s ease,visibility .35s ease;
+}
+.menu-overlay.open{opacity:1;visibility:visible}
+.menu-panel{
+  position:absolute;top:0;left:0;bottom:0;
+  width:min(460px,86vw);
+  background:var(--bg);
+  border-right:1px solid var(--border);
+  box-shadow:30px 0 80px rgba(0,0,0,0.5);
+  display:flex;flex-direction:column;
+  padding:32px 40px 40px;
+  transform:translateX(-100%);
+  transition:transform .4s cubic-bezier(.16,1,.3,1);
+  overflow-y:auto;
+}
+.menu-overlay.open .menu-panel{transform:translateX(0)}.menu-panel-head{display:flex;align-items:center;justify-content:space-between;padding-bottom:36px;margin-bottom:8px;border-bottom:var(--rule)}
+.menu-close{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:0.08em;text-transform:uppercase;
+  color:var(--text-3);background:none;border:none;cursor:pointer;transition:color .2s;
+}
+.menu-close:hover{color:var(--mint)}
+.menu-nav{display:flex;flex-direction:column;flex:1;padding-top:20px}
+.menu-link{
+  display:flex;align-items:baseline;gap:20px;
+  padding:20px 0;border-bottom:var(--rule);
+  transition:padding-left .25s ease;
+}
+.menu-link:hover{padding-left:10px}
+.menu-link-num{font-family:var(--mono);font-size:12px;color:var(--mint);letter-spacing:0.05em}
+.menu-link-text{
+  font-family:var(--sans);font-weight:700;font-size:2rem;
+  letter-spacing:-0.03em;text-transform:uppercase;line-height:1;color:var(--text);
+  transition:color .2s;
+}
+.menu-link:hover .menu-link-text{color:var(--mint)}
+.menu-panel-foot{padding-top:32px}
+.menu-panel-foot .btn{width:100%;justify-content:center}
+.menu-foot-meta{margin-top:20px;font-family:var(--mono);font-size:11px;letter-spacing:0.05em;color:var(--text-3)}
+.menu-foot-meta a:hover{color:var(--mint)}
+@media(max-width:600px){
+  .nav-cta-schedule{display:none}
+  .menu-link-text{font-size:1.7rem}
+}
+
+/* ── hero ── */
+.hero{
+  position:relative;
+  padding:150px 0 110px;
+  border-bottom:var(--rule);
+  overflow:hidden;
+}
+.hero-net{
+  position:absolute;
+  top:0;right:0;
+  width:60%;height:100%;
+  z-index:0;
+  opacity:0.55;
+  pointer-events:none;
+}
+.hero-spark{
+  stroke-dasharray:13 100;
+  stroke-linecap:round;
+  filter:drop-shadow(0 0 5px rgba(232,88,74,0.85));
+  animation:sparkTravel 3.2s linear infinite;
+}
+.hero-spark.s2{animation-duration:4s;animation-delay:-1.4s}
+.hero-spark.s3{animation-duration:2.6s;animation-delay:-.6s}
+.hero-spark.s4{animation-duration:2.2s;animation-delay:-1s}
+@keyframes sparkTravel{from{stroke-dashoffset:113}to{stroke-dashoffset:13}}
+.node-halo{transform-box:fill-box;transform-origin:center;animation:nodePulse 2.6s ease-in-out infinite}
+.node-halo.h2{animation-duration:3.2s;animation-delay:-1s}
+.node-halo.h3{animation-duration:2.2s;animation-delay:-1.6s}
+@keyframes nodePulse{0%,100%{opacity:.22;transform:scale(.7)}50%{opacity:.85;transform:scale(1.25)}}
+@media(prefers-reduced-motion:reduce){.hero-spark,.node-halo{animation:none}}
+.hero-glow{
+  position:absolute;
+  top:-10%;right:-5%;
+  width:50vw;max-width:680px;height:50vw;max-height:680px;
+  background:radial-gradient(circle,rgba(184,84,127,0.10),rgba(232,88,74,0.05) 40%,transparent 70%);
+  filter:blur(50px);
+  z-index:0;
+  pointer-events:none;
+}
+.hero-inner{position:relative;z-index:2}
+.hero-ticker{
+  display:flex;align-items:center;gap:18px;
+  font-family:var(--mono);
+  font-size:11.5px;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--text-3);
+  margin-bottom:64px;
+}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 3px rgba(232,88,74,0.15)}
+.dot.amber{background:var(--g1);box-shadow:0 0 0 3px rgba(244,162,76,0.15)}
+.hero-ticker .sep{color:var(--muted)}
+.hero h1{
+  font-family:var(--sans);
+  font-weight:700;
+  font-size:clamp(3rem,8vw,7rem);
+  line-height:0.92;
+  letter-spacing:-0.05em;
+  text-transform:uppercase;
+  margin:0 0 40px;
+  max-width:16ch;
+}
+.hero-meta-label{margin-bottom:28px}
+.hero-sub{
+  font-size:1.2rem;
+  line-height:1.55;
+  color:var(--text-2);
+  max-width:54ch;
+  margin-bottom:48px;
+  font-weight:400;
+}
+.hero-sub strong{color:var(--text);font-weight:500}
+.hero-ctas{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+
+/* ── buttons ── */
+.btn{
+  display:inline-flex;align-items:center;gap:12px;
+  font-family:var(--mono);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  padding:16px 26px;
+  border-radius:6px;
+  border:1px solid transparent;
+  transition:all .22s ease;
+}
+.btn-primary{background:var(--mint);color:#0A0F1A}
+.btn-primary:hover{background:#F2705F;transform:translateY(-1px)}
+.btn-primary svg{transition:transform .22s}
+.btn-primary:hover svg{transform:translateX(4px)}
+.btn-ghost{border-color:var(--border);color:var(--text)}
+.btn-ghost:hover{border-color:var(--mint);color:var(--mint)}
+
+/* ── hero stat strip ── */
+.hero-stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  margin-top:88px;
+  border-top:var(--rule);
+}
+.hstat{
+  padding:28px 28px 28px 0;
+  border-right:var(--rule);
+}
+.hstat:last-child{border-right:none;padding-right:0}
+.hstat-num{
+  font-family:var(--sans);
+  font-weight:700;
+  font-size:2.4rem;
+  letter-spacing:-0.03em;
+  line-height:1;
+  margin-bottom:10px;
+}
+.hstat-label{
+  font-family:var(--mono);
+  font-size:11px;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--text-3);
+}
+
+/* ── logos ── */
+.logos{padding:48px 0;border-bottom:var(--rule);background:var(--bg-2)}
+.logos-label{
+  font-family:var(--mono);
+  font-size:11px;
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+  color:var(--text-3);
+  text-align:center;
+  margin-bottom:32px;
+}
+.logos-row{display:flex;align-items:center;justify-content:center;gap:56px;flex-wrap:wrap}
+.logos-row .org{
+  font-family:var(--sans);
+  font-weight:500;
+  font-size:1.1rem;
+  letter-spacing:0.01em;
+  color:var(--text-3);
+  white-space:nowrap;
+  transition:color .2s;
+}
+.logos-row .org:hover{color:var(--text-2)}
+
+/* ── sections ── */
+section.block{padding:130px 0;border-bottom:var(--rule);position:relative}
+.sec-head{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  gap:64px;
+  align-items:start;
+  margin-bottom:72px;
+}
+.sec-head-r .h-lg{margin-top:18px}
+
+/* ── about ── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:start}
+.quote-card{
+  border:var(--rule);
+  border-radius:10px;
+  padding:44px 40px;
+  background:linear-gradient(155deg,var(--bg-3),var(--bg-2));
+  position:relative;
+  overflow:hidden;
+}
+.quote-card::before{
+  content:"";
+  position:absolute;top:0;left:0;right:0;height:2px;
+  background:var(--grad);
+}
+.quote-mark{
+  font-family:var(--sans);
+  font-weight:700;
+  font-size:4rem;
+  line-height:0.5;
+  margin-bottom:20px;
+}
+.quote-text{
+  font-family:var(--sans);
+  font-weight:500;
+  font-size:1.4rem;
+  line-height:1.32;
+  letter-spacing:-0.02em;
+  color:var(--text);
+  margin-bottom:24px;
+}
+.quote-attr{
+  font-family:var(--mono);
+  font-size:11.5px;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--text-3);
+}
+.kpis{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  margin-top:44px;
+  border-top:var(--rule);
+  border-left:var(--rule);
+}
+.kpi{padding:26px 24px;border-right:var(--rule);border-bottom:var(--rule)}
+.kpi-num{font-family:var(--sans);font-weight:700;font-size:2.1rem;letter-spacing:-0.03em;line-height:1;margin-bottom:8px}
+.kpi-label{font-family:var(--mono);font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-3)}
+
+.creds{margin-top:8px;border-top:var(--rule)}
+.cred{
+  display:grid;grid-template-columns:auto 1fr;gap:22px;
+  padding:24px 0;border-bottom:var(--rule);align-items:baseline;
+}
+.cred-num{font-family:var(--mono);font-size:12px;color:var(--mint);letter-spacing:0.05em}
+.cred h4{font-family:var(--sans);font-weight:600;font-size:1.05rem;letter-spacing:-0.01em;margin-bottom:5px;text-transform:uppercase}
+.cred p{font-size:0.95rem;color:var(--text-2);line-height:1.55}
+
+/* ── services ── */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:var(--rule);border-left:var(--rule)}
+.svc{
+  padding:40px 34px 38px;
+  border-right:var(--rule);
+  border-bottom:var(--rule);
+  position:relative;
+  transition:background .3s;
+}
+.svc::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:2px;
+  background:var(--grad);opacity:0;transition:opacity .3s;
+}
+.svc:hover{background:var(--bg-2)}
+.svc:hover::before{opacity:1}
+.svc-idx{
+  font-family:var(--mono);font-size:12px;color:var(--mint);
+  letter-spacing:0.08em;margin-bottom:48px;display:block;
+}
+.svc h3{
+  font-family:var(--sans);font-weight:700;font-size:1.6rem;
+  letter-spacing:-0.025em;line-height:1.04;text-transform:uppercase;
+  margin-bottom:18px;
+}
+.svc p{font-size:0.95rem;color:var(--text-2);line-height:1.6;margin-bottom:28px}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tag{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:0.05em;
+  text-transform:uppercase;color:var(--text-3);
+  padding:5px 11px;border:1px solid var(--border-soft);border-radius:999px;
+}
+
+/* ── timeline ── */
+.tl{display:grid;grid-template-columns:220px 1fr;border-top:var(--rule)}
+.tl-date{
+  padding:34px 24px 34px 0;border-bottom:var(--rule);
+  font-family:var(--mono);font-size:12px;color:var(--mint);
+  letter-spacing:0.06em;text-transform:uppercase;
+}
+.tl-content{padding:34px 0 34px 44px;border-bottom:var(--rule);border-left:var(--rule)}
+.tl-content h4{font-family:var(--sans);font-weight:700;font-size:1.4rem;letter-spacing:-0.025em;text-transform:uppercase;margin-bottom:10px;line-height:1.06}
+.tl-content p{font-size:0.96rem;color:var(--text-2);line-height:1.6;max-width:64ch}
+
+/* ── pipeline ── */
+.pipe-list{border-top:var(--rule)}
+.pipe{display:grid;grid-template-columns:180px 1fr 160px;gap:44px;padding:40px 0;border-bottom:var(--rule);align-items:start}
+.pipe-val{font-family:var(--sans);font-weight:700;font-size:2.3rem;letter-spacing:-0.04em;line-height:1}
+.pipe-body h4{font-family:var(--sans);font-weight:700;font-size:1.35rem;letter-spacing:-0.025em;text-transform:uppercase;margin-bottom:8px}
+.pipe-body p{font-size:0.95rem;color:var(--text-2);line-height:1.6;max-width:60ch}
+.pipe-status{
+  justify-self:end;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--text-3);
+  display:inline-flex;align-items:center;gap:9px;padding-top:6px;
+}
+.pipe-status::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--text-3)}
+.pipe-status.live{color:var(--mint)}
+.pipe-status.live::before{background:var(--mint);box-shadow:0 0 0 3px rgba(232,88,74,0.18)}
+
+/* ── media ── */
+.media-group{margin-bottom:56px}
+.media-group:last-child{margin-bottom:0}
+.media-cat{
+  display:flex;justify-content:space-between;align-items:center;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:0.13em;
+  text-transform:uppercase;color:var(--text-3);
+  margin-bottom:0;padding-bottom:16px;border-bottom:var(--rule);
+}
+.media-cat .cat-name{color:var(--text-2)}
+.m-grid-4{display:grid;grid-template-columns:repeat(4,1fr);border-left:var(--rule)}
+.m-grid-3{display:grid;grid-template-columns:repeat(3,1fr);border-left:var(--rule)}
+.m-card{
+  display:flex;flex-direction:column;overflow:hidden;
+  border-right:var(--rule);border-bottom:var(--rule);
+  transition:background .2s;cursor:pointer;
+}
+.m-card:hover{background:var(--bg-2)}
+.m-body{display:flex;flex-direction:column;flex:1;padding:18px 20px 22px}
+.m-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase}
+.m-type{color:var(--mint)}
+.m-yr{color:var(--text-3)}
+.m-card h4{font-family:var(--sans);font-weight:600;font-size:1.05rem;line-height:1.18;letter-spacing:-0.015em;margin-bottom:12px;flex:1}
+.m-src{font-family:var(--mono);font-size:11px;letter-spacing:0.03em;color:var(--text-3)}
+.m-loc{font-family:var(--mono);font-size:10.5px;letter-spacing:0.05em;color:var(--text-3);margin-top:10px}
+
+/* ── media thumbnails ── */
+.m-thumb{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:var(--bg-3)}
+.m-thumb>img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.m-card:hover .m-thumb>img{transform:scale(1.06)}
+.m-thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,15,26,.55));pointer-events:none}
+.m-thumb-fav{display:flex;align-items:center;justify-content:center;background:radial-gradient(120% 120% at 30% 20%,var(--bg-3),var(--bg-2))}
+.m-thumb-fav::after{display:none}
+.m-thumb-fav img{width:48px;height:48px;object-fit:contain;border-radius:10px;background:#fff;padding:7px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.m-domain{position:absolute;bottom:10px;left:12px;z-index:2;font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--text);background:rgba(10,15,26,.55);padding:3px 8px;border-radius:5px;backdrop-filter:blur(4px)}
+.m-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:2;pointer-events:none}
+.m-play span{width:52px;height:52px;border-radius:50%;background:rgba(232,88,74,.92);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.45);transition:transform .25s,background .25s}
+.m-card:hover .m-play span{transform:scale(1.1);background:var(--mint)}
+.m-play svg{width:18px;height:18px;margin-left:3px;fill:#0A0F1A}
+
+/* text-only media cards (news / press / profiles — no thumbnail) */
+.m-text{padding:24px 22px 26px;min-height:158px;position:relative}
+.m-text::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad);opacity:0;transition:opacity .3s}
+.m-text:hover::before{opacity:1}
+.m-text .m-body{padding:0}
+.m-ext{margin-top:14px;font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-3);display:inline-flex;align-items:center;gap:6px}
+.m-text:hover .m-ext{color:var(--mint)}
+
+/* footer social */
+.foot-social{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.foot-social a{display:inline-flex;align-items:center;gap:7px;color:var(--text-3);transition:color .2s}
+.foot-social a:hover{color:var(--mint)}
+.foot-social svg{width:14px;height:14px;flex-shrink:0}
+@media(max-width:600px){.foot-row{flex-direction:column;align-items:flex-start;gap:18px}}
+
+/* ── why odyssey ── */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:var(--rule);border-left:var(--rule)}
+.why{padding:34px 28px 36px;border-right:var(--rule);border-bottom:var(--rule);position:relative;transition:background .3s}
+.why:hover{background:var(--bg-2)}
+.why-num{font-family:var(--mono);font-size:12px;color:var(--mint);letter-spacing:0.08em;display:block;margin-bottom:30px}
+.why h4{font-family:var(--sans);font-weight:700;font-size:1.18rem;letter-spacing:-0.02em;line-height:1.08;text-transform:uppercase;margin-bottom:12px}
+.why p{font-size:0.9rem;color:var(--text-2);line-height:1.55}
+@media(max-width:980px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.why-grid{grid-template-columns:1fr}}
+
+/* ── video lightbox ── */
+.vid-modal{position:fixed;inset:0;z-index:1000;background:rgba(6,9,16,.86);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:24px}
+.vid-modal.open{display:flex}
+.vid-frame{position:relative;width:min(960px,100%);aspect-ratio:16/9}
+.vid-frame iframe{width:100%;height:100%;border:0;border-radius:10px;box-shadow:0 30px 90px rgba(0,0,0,.6);background:#000}
+.vid-close{position:absolute;top:-46px;right:0;background:none;border:1px solid var(--border);color:var(--text);font-size:13px;width:34px;height:34px;border-radius:50%;cursor:pointer;transition:border-color .2s,color .2s}
+.vid-close:hover{border-color:var(--mint);color:var(--mint)}
+
+/* ── cta ── */
+.cta{padding:150px 0 130px;text-align:center;position:relative;overflow:hidden}
+.cta-glow{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:680px;height:680px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,88,74,0.07),transparent 65%);
+  z-index:0;pointer-events:none;
+}
+.cta-inner{position:relative;z-index:2}
+.cta h2{margin:28px auto 22px;max-width:18ch}
+.cta-sub{font-size:1.15rem;color:var(--text-2);max-width:52ch;margin:0 auto 44px;line-height:1.55}
+.cta-meta{
+  margin-top:44px;font-family:var(--mono);font-size:11px;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--text-3);
+  display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;
+}
+.cta-meta .sep{color:var(--muted)}
+
+/* ── footer ── */
+footer{padding:40px 0;border-top:var(--rule)}
+.foot-row{
+  display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:11px;letter-spacing:0.05em;color:var(--text-3);
+}
+.foot-row a:hover{color:var(--mint)}
+
+/* ── reveal (JS-gated: only hidden when .js flag present, so content never disappears if JS fails) ── */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
+.reveal.visible{opacity:1 !important;transform:none !important}
+@media(prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none}}
+
+/* ── responsive ── */
+@media(max-width:980px){
+  .wrap{padding:0 24px}
+  .hero{padding:150px 0 80px}
+  .hero-net{display:none}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  .hstat{padding:24px 20px 24px 0}
+  .hstat:nth-child(2){border-right:none;padding-right:0}
+  .hstat:nth-child(3),.hstat:nth-child(4){border-bottom:none}
+  .sec-head,.about-grid{grid-template-columns:1fr;gap:40px}
+  .svc-grid{grid-template-columns:1fr}
+  .tl{grid-template-columns:1fr}
+  .tl-content{border-left:none;padding:6px 0 26px}
+  .tl-date{padding-bottom:6px;border-bottom:none}
+  .pipe{grid-template-columns:1fr;gap:16px}
+  .pipe-status{justify-self:start}
+  .m-grid-4,.m-grid-3{grid-template-columns:1fr 1fr}
+  .nav-ticker{display:none}
+}
+@media(max-width:600px){
+  .hero-ctas{flex-direction:column;align-items:stretch}
+  .btn{justify-content:center}
+  .hero-stats,.kpis{grid-template-columns:1fr}
+  .hstat{border-right:none}
+  .m-grid-4,.m-grid-3{grid-template-columns:1fr}
+}
+
+/* ── chat ── */
+.chat-toggle{position:fixed;bottom:24px;right:24px;z-index:999;width:54px;height:54px;border-radius:50%;background:var(--mint);color:#0A0F1A;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px rgba(232,88,74,0.3);transition:transform .2s}
+.chat-toggle:hover{transform:translateY(-2px)}
+.chat-toggle svg{width:22px;height:22px}
+.chat-window{position:fixed;bottom:92px;right:24px;z-index:998;width:390px;max-height:580px;background:var(--bg-2);border:1px solid var(--border);border-radius:12px;box-shadow:0 24px 64px rgba(0,0,0,.55);display:none;flex-direction:column;overflow:hidden;font-family:var(--sans)}
+.chat-window.open{display:flex}
+.chat-header{padding:18px 20px;border-bottom:var(--rule);display:flex;align-items:center;justify-content:space-between;background:var(--bg-3)}
+.chat-h-l{display:flex;align-items:center;gap:10px}
+.chat-dot{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 3px rgba(232,88,74,0.18)}
+.chat-h-l h4{font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:0.02em;text-transform:uppercase;color:var(--text);margin-bottom:2px}
+.chat-h-l span{font-family:var(--mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-3)}
+.chat-close{background:none;border:none;color:var(--text-3);cursor:pointer;font-size:16px;padding:4px;line-height:1}
+.chat-close:hover{color:var(--text)}
+.chat-messages{flex:1;overflow-y:auto;padding:16px 18px;display:flex;flex-direction:column;gap:10px;max-height:380px;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+.chat-msg{max-width:88%;padding:11px 14px;border-radius:10px;font-size:13.5px;line-height:1.5}
+.chat-msg.bot{background:var(--bg-3);color:var(--text);align-self:flex-start;border-top-left-radius:4px;border:1px solid var(--border-soft)}
+.chat-msg.user{background:var(--mint);color:#0A0F1A;align-self:flex-end;border-top-right-radius:4px;font-weight:500}
+.chat-msg.typing{color:var(--text-3);font-style:italic}
+.chat-msg a{color:var(--mint);text-decoration:underline}
+.chat-msg strong{font-weight:700}
+.chat-quick{display:flex;flex-wrap:wrap;gap:6px;padding:0 18px 12px}
+.chat-quick button{background:transparent;border:1px solid var(--border);border-radius:999px;padding:6px 12px;color:var(--text-2);font-family:var(--mono);font-size:10.5px;letter-spacing:0.05em;text-transform:uppercase;cursor:pointer;transition:border-color .2s,color .2s}
+.chat-quick button:hover{border-color:var(--mint);color:var(--mint)}
+.chat-input-wrap{padding:12px 14px;border-top:var(--rule);display:flex;gap:8px;background:var(--bg-3)}
+.chat-input{flex:1;background:var(--bg-2);border:1px solid var(--border-soft);border-radius:8px;padding:10px 12px;color:var(--text);font-size:13.5px;font-family:var(--sans);outline:none}
+.chat-input:focus{border-color:var(--mint)}
+.chat-input::placeholder{color:var(--text-3)}
+.chat-send{background:var(--mint);color:#0A0F1A;border:none;border-radius:8px;width:38px;height:38px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s;flex-shrink:0}
+.chat-send:hover{background:#F2705F}
+.chat-send:disabled{opacity:.4;cursor:default}
+@media(max-width:500px){.chat-window{right:12px;left:12px;width:auto;bottom:88px}}
+</style>
+</head>
+<body>
+
+
+
+<!-- ══════════ NAV ══════════ -->
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="#" class="brand">
+      <img class="brand-mark" src="assets/logo.png" alt="Odyssey Works">
+      <span class="brand-name">Odyssey Works</span>
+      <span class="nav-ticker">
+        <span class="dot"></span>
+        <span>AI · Blockchain · Enterprise</span>
+        <span class="sep">/</span>
+        <span class="dot amber"></span>
+        <span>Advisory · Est. 2023</span>
+      </span>
+    </a>
+    <div style="display:flex;align-items:center;gap:8px">
+      <a href="https://calendar.app.google/zqAdE3CQmZ2ea3296" target="_blank" class="nav-cta nav-cta-schedule">Schedule →</a>
+      <button class="menu-btn" id="menuBtn" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
+        <span class="menu-btn-bars"><span></span><span></span></span>
+        Menu
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════ MENU OVERLAY ══════════ -->
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <div class="menu-panel">
+    <div class="menu-panel-head">
+      <div class="label dim"><span class="dash"></span>Navigation</div>
+      <button class="menu-close" onclick="toggleMenu()" aria-label="Close menu">Close ✕</button>
+    </div>
+    <nav class="menu-nav">
+      <a href="#about" class="menu-link" onclick="toggleMenu()"><span class="menu-link-num">01</span><span class="menu-link-text">About</span></a>
+      <a href="#why" class="menu-link" onclick="toggleMenu()"><span class="menu-link-num">02</span><span class="menu-link-text">Why Odyssey</span></a>
+      <a href="#services" class="menu-link" onclick="toggleMenu()"><span class="menu-link-num">03</span><span class="menu-link-text">Practices</span></a>
+      <a href="#track-record" class="menu-link" onclick="toggleMenu()"><span class="menu-link-num">04</span><span class="menu-link-text">Experience</span></a>
+      <a href="#media" class="menu-link" onclick="toggleMenu()"><span class="menu-link-num">05</span><span class="menu-link-text">Library</span></a>
+      <a href="#contact" class="menu-link" onclick="toggleMenu()"><span class="menu-link-num">06</span><span class="menu-link-text">Contact</span></a>
+    </nav>
+    <div class="menu-panel-foot">
+      <a href="https://calendar.app.google/zqAdE3CQmZ2ea3296" target="_blank" class="btn btn-primary" onclick="toggleMenu()">
+        Schedule a consultation
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+      <div class="menu-foot-meta"><a href="mailto:ceo@odyssey-works.io">ceo@odyssey-works.io</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <svg class="hero-net" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="sparkGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#F6AE5C"></stop><stop offset="100%" stop-color="#E8584A"></stop>
+      </linearGradient>
+    </defs>
+    <!-- base grid -->
+    <g stroke="#5A6A85" stroke-width="0.6" fill="none" opacity="0.38">
+      <line x1="120" y1="90" x2="320" y2="160"></line>
+      <line x1="320" y1="160" x2="240" y2="360"></line>
+      <line x1="320" y1="160" x2="500" y2="240"></line>
+      <line x1="240" y1="360" x2="430" y2="430"></line>
+      <line x1="500" y1="240" x2="430" y2="430"></line>
+      <line x1="430" y1="430" x2="520" y2="640"></line>
+      <line x1="240" y1="360" x2="160" y2="560"></line>
+      <line x1="160" y1="560" x2="380" y2="600"></line>
+      <line x1="380" y1="600" x2="520" y2="640"></line>
+      <line x1="120" y1="90" x2="60" y2="280"></line>
+      <line x1="60" y1="280" x2="160" y2="560"></line>
+    </g>
+    <!-- electricity pulses travelling the grid -->
+    <g fill="none" stroke="url(#sparkGrad)" stroke-width="2.2">
+      <path class="hero-spark s1" pathLength="100" d="M120 90 L320 160 L500 240 L430 430 L520 640"></path>
+      <path class="hero-spark s2" pathLength="100" d="M320 160 L240 360 L160 560 L380 600 L520 640"></path>
+      <path class="hero-spark s3" pathLength="100" d="M120 90 L60 280 L160 560"></path>
+      <path class="hero-spark s4" pathLength="100" d="M240 360 L430 430"></path>
+    </g>
+    <!-- nodes -->
+    <g fill="#5A6A85" opacity="0.7">
+      <circle cx="120" cy="90" r="3"></circle><circle cx="320" cy="160" r="3.5"></circle><circle cx="500" cy="240" r="3"></circle>
+      <circle cx="240" cy="360" r="3"></circle><circle cx="430" cy="430" r="4"></circle><circle cx="60" cy="280" r="2.5"></circle>
+      <circle cx="160" cy="560" r="3"></circle><circle cx="380" cy="600" r="3"></circle><circle cx="520" cy="640" r="3.5"></circle>
+    </g>
+    <!-- pulsing accent halos -->
+    <circle class="node-halo" cx="430" cy="430" r="8" fill="none" stroke="#E8584A" stroke-width="1.4"></circle>
+    <circle class="node-halo h2" cx="320" cy="160" r="7" fill="none" stroke="#E8584A" stroke-width="1.4"></circle>
+    <circle class="node-halo h3" cx="160" cy="560" r="7" fill="none" stroke="#E8584A" stroke-width="1.4"></circle>
+  </svg>
+  <div class="wrap hero-inner">
+    <h1>Turn the <span class="grad-text">convergence</span> of AI &amp; digital assets into advantage.</h1>
+    <p class="hero-sub">Board-level advisory for <strong>enterprises and governments</strong> moving from pilots to production — across AI, blockchain infrastructure, and tokenized assets. Led by the <strong>former Chief Commercial Officer of Cardano / IOHK</strong>, with a $3B+ enterprise track record and protocols live in market today.</p>
+    <div class="hero-ctas">
+      <a href="https://calendar.app.google/zqAdE3CQmZ2ea3296" target="_blank" class="btn btn-primary">
+        Schedule a consultation
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+      <a href="#services" class="btn btn-ghost">View practices</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-num grad-text">$3B+</div><div class="hstat-label">Pursuits Won</div></div>
+      <div class="hstat"><div class="hstat-num">20+</div><div class="hstat-label">Years Enterprise</div></div>
+      <div class="hstat"><div class="hstat-num">270+</div><div class="hstat-label">Validators Live</div></div>
+      <div class="hstat"><div class="hstat-num">$60M+</div><div class="hstat-label">Assets Staked</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ LOGOS ══════════ -->
+<section class="logos">
+  <div class="wrap">
+    <div class="logos-label">Leadership Experience With</div>
+    <div class="logos-row">
+      <span class="org">IOHK / Cardano</span>
+      <span class="org">Dell Technologies</span>
+      <span class="org">DXC · CSC</span>
+      <span class="org">Apex Fusion</span>
+      <span class="org">HAL8</span>
+      <span class="org">McGill University</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section class="block" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><div class="label"><span class="dash"></span>§ 01 — Leadership</div></div>
+      <div class="sec-head-r reveal">
+        <h2 class="h-lg">Built at the frontier of <span class="grad-text">blockchain's</span> defining moments.</h2>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="quote-card">
+          <div class="quote-mark grad-text">"</div>
+          <div class="quote-text">We shall not cease from exploration — and the end of all our exploring will be to arrive where we started and know the place for the first time.</div>
+          <div class="quote-attr">— T.S. Eliot</div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <p class="lede" style="margin-bottom:36px">You get a partner who has built and sold at the frontier — not a slide deck. Odyssey Works is led by a C-level operator who served as <strong style="color:var(--text);font-weight:500">Chief Commercial Officer at IOHK</strong>, the firm behind Cardano, reporting directly to Charles Hoskinson through five defining years of enterprise and government adoption — and who still ships live protocols today.</p>
+        <p style="font-size:1rem;color:var(--text-2);line-height:1.65;margin-bottom:24px">That rare combination — protocol-level engineering, Fortune 500 commercial discipline, and live operating roles — means you work directly with the principal, not a hand-off to a junior team.</p>
+        <p style="font-size:1rem;color:var(--text-2);line-height:1.65">Every engagement is senior, confidential, and accountable to outcomes you can measure. The full track record is below.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WHY ODYSSEY ══════════ -->
+<section class="block" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><div class="label"><span class="dash"></span>§ 02 — Why Odyssey</div></div>
+      <div class="sec-head-r reveal"><h2 class="h-lg">Advice that survives <span class="grad-text">first contact with reality.</span></h2></div>
+    </div>
+    <div class="why-grid">
+      <div class="why reveal">
+        <span class="why-num">/ 01</span>
+        <h4>Builder, not just advisor</h4>
+        <p>Co-founded Apex Fusion and HAL8 and negotiated $3B+ in enterprise deals. Recommendations are grounded in what it actually takes to ship and sell — not theory.</p>
+      </div>
+      <div class="why reveal">
+        <span class="why-num">/ 02</span>
+        <h4>The full stack, one desk</h4>
+        <p>AI, blockchain, and enterprise transformation under a single advisor — so strategy stays coherent instead of stitched together from three vendors.</p>
+      </div>
+      <div class="why reveal">
+        <span class="why-num">/ 03</span>
+        <h4>C-suite credibility</h4>
+        <p>Reported to Charles Hoskinson and carried strategy into Fortune 500 boardrooms and government programs. Comfortable where the decisions are actually made.</p>
+      </div>
+      <div class="why reveal">
+        <span class="why-num">/ 04</span>
+        <h4>Skin in the game</h4>
+        <p>Active operating roles and real capital at risk — not detached consulting from the sidelines. The advice comes from someone living with the outcome.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SERVICES ══════════ -->
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><div class="label"><span class="dash"></span>§ 03 — Practices</div></div>
+      <div class="sec-head-r reveal"><h2 class="h-lg">Three pillars of <span class="grad-text">transformation.</span></h2></div>
+    </div>
+
+    <div class="svc-grid">
+      <div class="svc reveal">
+        <span class="svc-idx">/ 01</span>
+        <h3>AI Strategy &amp; Implementation</h3>
+        <p>From generative AI integration to agentic workflows and enterprise LLM deployment. Move beyond experimentation to production-grade AI that drives measurable ROI.</p>
+        <div class="tags"><span class="tag">Generative AI</span><span class="tag">LLM Ops</span><span class="tag">Agents</span><span class="tag">RAG</span><span class="tag">Automation</span></div>
+      </div>
+      <div class="svc reveal">
+        <span class="svc-idx">/ 02</span>
+        <h3>Blockchain &amp; Digital Assets</h3>
+        <p>Deep protocol-level expertise across UTXO and EVM architectures. Tokenomics, DeFi strategy, enterprise blockchain deployment, and compliance frameworks.</p>
+        <div class="tags"><span class="tag">Tokenomics</span><span class="tag">DeFi</span><span class="tag">Smart Contracts</span><span class="tag">RWA</span><span class="tag">Compliance</span></div>
+      </div>
+      <div class="svc reveal">
+        <span class="svc-idx">/ 03</span>
+        <h3>Digital Transformation</h3>
+        <p>End-to-end strategic advisory for the convergence of AI, Web3, and emerging technology. Align technology roadmaps with business outcomes for governments and enterprises.</p>
+        <div class="tags"><span class="tag">Strategy</span><span class="tag">Roadmapping</span><span class="tag">Gov &amp; Enterprise</span><span class="tag">Change Mgmt</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TRACK RECORD ══════════ -->
+<section class="block" id="track-record">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><div class="label"><span class="dash"></span>§ 04 — Experience</div></div>
+      <div class="sec-head-r reveal"><h2 class="h-lg">A career defined by <span class="grad-text">execution.</span></h2></div>
+    </div>
+
+    <div class="tl">
+      <div class="reveal" style="display:contents"><div class="tl-date">2024 — Present</div>
+        <div class="tl-content"><h4>CEO, HAL8 &amp; Co-Founder, Apex Fusion</h4><p>Building federated blockchain infrastructure. Tri-chain architecture uniting UTXO + EVM. $6M raised, 270+ validators, $60M+ staked. Recognized at Cardano Summit 2025 Berlin.</p></div>
+      </div>
+      <div class="reveal" style="display:contents"><div class="tl-date">2019 — 2024</div>
+        <div class="tl-content"><h4>CCO — IOHK / Cardano</h4><p>Joined when ADA was cents. Nearly five years through the DeFi / NFT boom. Led enterprise and government strategy. Reported to Charles Hoskinson. Bridged blockchain with Fortune 500 needs.</p></div>
+      </div>
+      <div class="reveal" style="display:contents"><div class="tl-date">2023</div>
+        <div class="tl-content"><h4>Founded Odyssey Works Inc.</h4><p>Established strategic advisory at the intersection of AI, blockchain, and digital transformation for enterprises navigating Web 3.0 adoption.</p></div>
+      </div>
+      <div class="reveal" style="display:contents"><div class="tl-date">Prior</div>
+        <div class="tl-content" style="border-bottom:none"><h4>Enterprise — Dell, CSC</h4><p>$3B+ in successful technology pursuits. Commercial Director at Dell for hybrid cloud. Chief Negotiator for global contracts at CSC. Fortune 500 systems integration at scale. McGill Engineering + MBA.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PIPELINE ══════════ -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><div class="label"><span class="dash"></span>§ 05 — Current Engagements</div></div>
+      <div class="sec-head-r reveal"><h2 class="h-lg">Active <span class="grad-text">pipeline.</span></h2></div>
+    </div>
+
+    <div class="pipe-list">
+      <div class="pipe reveal">
+        <div class="pipe-val grad-text">Apex Fusion</div>
+        <div class="pipe-body"><h4>Tri-Chain Blockchain Architecture</h4><p>Co-founded and hands-on building Apex Fusion — production tri-chain infrastructure uniting UTXO and EVM, live in market and scaling.</p></div>
+        <span class="pipe-status live">Active</span>
+      </div>
+      <div class="pipe reveal">
+        <div class="pipe-val">$100M</div>
+        <div class="pipe-body"><h4>Tokenized Real Estate</h4><p>Structuring a large-scale real-world asset tokenization engagement for an institutional-grade real estate portfolio.</p></div>
+        <span class="pipe-status">In Progress</span>
+      </div>
+      <div class="pipe reveal" style="border-bottom:none">
+        <div class="pipe-val">$150M</div>
+        <div class="pipe-body"><h4>Strategic Acquisition</h4><p>Advising on a significant acquisition bridging traditional enterprise infrastructure with blockchain-native technology.</p></div>
+        <span class="pipe-status">In Progress</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ MEDIA ══════════ -->
+<section class="block" id="media">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal"><div class="label"><span class="dash"></span>§ 06 — Library</div></div>
+      <div class="sec-head-r reveal">
+        <h2 class="h-lg" style="margin-bottom:22px">In the <span class="grad-text">conversation.</span></h2>
+        <p class="lede">Featured across leading blockchain and technology publications, podcasts, summits, and industry events worldwide.</p>
+      </div>
+    </div>
+
+    <div class="media-group reveal">
+      <div class="media-cat"><span class="cat-name">Video Interviews &amp; Talks</span><span>08</span></div>
+      <div class="m-grid-3">
+        <a href="https://www.youtube.com/watch?v=jhkZfnpqBiI" target="_blank" rel="noopener" class="m-card" onclick="return openVid('jhkZfnpqBiI')">
+          <div class="m-thumb"><img loading="lazy" src="https://i.ytimg.com/vi/jhkZfnpqBiI/hqdefault.jpg" alt="Why Crypto's Biggest Problem Isn't What You Think"><div class="m-play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg></span></div></div>
+          <div class="m-body"><div class="m-head"><span class="m-type">▶ Podcast</span><span class="m-yr">2025</span></div><h4>Why Crypto's Biggest Problem Isn't What You Think</h4><div class="m-src">Mahmoud Khodor Podcast — Web3 adoption &amp; identity</div></div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=GOjy3OGMmag" target="_blank" rel="noopener" class="m-card" onclick="return openVid('GOjy3OGMmag')">
+          <div class="m-thumb"><img loading="lazy" src="https://i.ytimg.com/vi/GOjy3OGMmag/hqdefault.jpg" alt="The Backbone of Multichain? Apex Fusion's Vision"><div class="m-play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg></span></div></div>
+          <div class="m-body"><div class="m-head"><span class="m-type">▶ Podcast</span><span class="m-yr">2025</span></div><h4>The Backbone of Multichain? Apex Fusion's Vision</h4><div class="m-src">Blockchain Interviews — Ashton Addison</div></div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=Rhe-WtM50NU" target="_blank" rel="noopener" class="m-card" onclick="return openVid('Rhe-WtM50NU')">
+          <div class="m-thumb"><img loading="lazy" src="https://i.ytimg.com/vi/Rhe-WtM50NU/hqdefault.jpg" alt="Bridging the Gap with Apex Fusion"><div class="m-play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg></span></div></div>
+          <div class="m-body"><div class="m-head"><span class="m-type">▶ Interview</span><span class="m-yr">2025</span></div><h4>Bridging the Gap with Apex Fusion</h4><div class="m-src">DappCentral at Rare Evo 2025 — Farid</div></div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=NiDx1hk34pA" target="_blank" rel="noopener" class="m-card" onclick="return openVid('NiDx1hk34pA')">
+          <div class="m-thumb"><img loading="lazy" src="https://i.ytimg.com/vi/NiDx1hk34pA/hqdefault.jpg" alt="Apex Fusion: Across All Chains"><div class="m-play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg></span></div></div>
+          <div class="m-body"><div class="m-head"><span class="m-type">▶ Interview</span><span class="m-yr">2025</span></div><h4>Apex Fusion: Across All Chains</h4><div class="m-src">Rare Network — Cole TenEyck</div></div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=wAXUtYovHv0" target="_blank" rel="noopener" class="m-card" onclick="return openVid('wAXUtYovHv0')">
+          <div class="m-thumb"><img loading="lazy" src="https://i.ytimg.com/vi/wAXUtYovHv0/hqdefault.jpg" alt="Put 10,000 Hours Into Learning About Blockchain"><div class="m-play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg></span></div></div>
+          <div class="m-body"><div class="m-head"><span class="m-type">▶ Podcast</span><span class="m-yr">2022</span></div><h4>Put 10,000 Hours Into Learning About Blockchain</h4><div class="m-src">The Wolf of All Streets — Scott Melker</div></div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=RvmOzKbmEbU" target="_blank" rel="noopener" class="m-card" onclick="return openVid('RvmOzKbmEbU')">
+          <div class="m-thumb"><img loading="lazy" src="https://i.ytimg.com/vi/RvmOzKbmEbU/hqdefault.jpg" alt="Blockchain's Last Chance: Enterprise"><div class="m-play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg></span></div></div>
+          <div class="m-body"><div class="m-head"><span class="m-type">▶ Interview</span><span class="m-yr">2025</span></div><h4>Blockchain's Last Chance: Enterprise</h4><div class="m-src">No BS Around Web3 · Wavect — Kevin Riedl</div></div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=BFSMpAhHCAg" target="_blank" rel="noopener" class="m-card" onclick="return openVid('BFSMpAhHCAg')">
+          <div class="m-thumb"><img loading="lazy" src="https://i.ytimg.com/vi/BFSMpAhHCAg/hqdefault.jpg" alt="Building the Future of Web3 with Jerry Fragiskatos"><div class="m-play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg></span></div></div>
+          <div class="m-body"><div class="m-head"><span class="m-type">▶ Podcast</span><span class="m-yr">2025</span></div><h4>Building the Future of Web3 — Ep. 017</h4><div class="m-src">Fusing the Unfusable — live at TOKEN2049 Dubai</div></div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=QdP2lGP7SF8" target="_blank" rel="noopener" class="m-card" onclick="return openVid('QdP2lGP7SF8')">
+          <div class="m-thumb"><img loading="lazy" src="https://i.ytimg.com/vi/QdP2lGP7SF8/hqdefault.jpg" alt="Cardano: Friend or Foe?"><div class="m-play"><span><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg></span></div></div>
+          <div class="m-body"><div class="m-head"><span class="m-type">▶ Interview</span><span class="m-yr">2025</span></div><h4>Cardano: Friend or Foe?</h4><div class="m-src">Crypto Crow — multichain &amp; UTXO vs EVM</div></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="media-group reveal">
+      <div class="media-cat"><span class="cat-name">Podcasts</span><span>03</span></div>
+      <div class="m-grid-3">
+        <a href="https://badcryptopodcast.com/2025/07/31/apex-785/" target="_blank" rel="noopener" class="m-card m-text">
+          <div class="m-body"><div class="m-head"><span class="m-type">Podcast</span><span class="m-yr">2025</span></div><h4>Apex Fusion: Bridging the Blockchain Divide</h4><div class="m-src">The Bad Crypto Podcast · Ep 785 — Comm &amp; Wright</div><span class="m-ext">Listen ↗</span></div>
+        </a>
+        <a href="https://podcasts.apple.com/us/podcast/224-merging-bitcoin-ethereum-jerry-from-apex-fusion/id1597706233?i=1000692253752" target="_blank" rel="noopener" class="m-card m-text">
+          <div class="m-body"><div class="m-head"><span class="m-type">Podcast</span><span class="m-yr">2025</span></div><h4>Merging Bitcoin &amp; Ethereum: Building a Scalable L1</h4><div class="m-src">Web3 with Sam Kamani · Ep 224</div><span class="m-ext">Listen ↗</span></div>
+        </a>
+        <a href="https://open.spotify.com/episode/7LjVsjO3YrIlnKtXErWD74" target="_blank" rel="noopener" class="m-card m-text">
+          <div class="m-body"><div class="m-head"><span class="m-type">Podcast</span><span class="m-yr">2025</span></div><h4>Apex Fusion with the CEO of HAL8</h4><div class="m-src">Slot Leader — Where TradFi Meets Blockchain</div><span class="m-ext">Listen ↗</span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="media-group reveal">
+      <div class="media-cat"><span class="cat-name">News &amp; Press</span><span>05</span></div>
+      <div class="m-grid-3">
+        <a href="https://blockleaders.io/we-forked-cardano-and-it-worked/" target="_blank" rel="noopener" class="m-card m-text">
+          <div class="m-body"><div class="m-head"><span class="m-type">Feature</span><span class="m-yr">2026</span></div><h4>"We Forked Cardano and It Worked"</h4><div class="m-src">Blockleaders — Jillian Godsil</div><span class="m-ext">Read ↗</span></div>
+        </a>
+        <a href="https://www.dlnews.com/research/internal/conversation-jerry-fragiskatos-co-founder-of-apex-fusion/" target="_blank" rel="noopener" class="m-card m-text">
+          <div class="m-body"><div class="m-head"><span class="m-type">Interview</span><span class="m-yr">2025</span></div><h4>A Conversation on Bridging Enterprise &amp; Web3</h4><div class="m-src">DL News — Research</div><span class="m-ext">Read ↗</span></div>
+        </a>
+        <a href="https://dailyhodl.com/2022/12/06/iohk-executive-says-cardano-ada-and-crypto-in-the-dot-com-stage-of-development/" target="_blank" rel="noopener" class="m-card m-text">
+          <div class="m-body"><div class="m-head"><span class="m-type">Press</span><span class="m-yr">2022</span></div><h4>"Crypto Is in the Dot-Com Stage of Development"</h4><div class="m-src">The Daily Hodl — w/ Scott Melker, Mainnet NYC</div><span class="m-ext">Read ↗</span></div>
+        </a>
+        <a href="https://cryptoslate.com/cardano-ada-parent-company-iohk-gets-a-new-cto/" target="_blank" rel="noopener" class="m-card m-text">
+          <div class="m-body"><div class="m-head"><span class="m-type">Press</span><span class="m-yr">2020</span></div><h4>Cardano Parent Company IOHK Names New CCO</h4><div class="m-src">CryptoSlate — ahead of Shelley mainnet</div><span class="m-ext">Read ↗</span></div>
+        </a>
+        <a href="https://www.iog.io/news/cardano-summit-2021-summary-governance-is-the-next-big-thing" target="_blank" rel="noopener" class="m-card m-text">
+          <div class="m-body"><div class="m-head"><span class="m-type">News</span><span class="m-yr">2021</span></div><h4>Governance Is the Next Big Thing — Summit Recap</h4><div class="m-src">Input Output Global (IOG)</div><span class="m-ext">Read ↗</span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="media-group reveal">
+      <div class="media-cat"><span class="cat-name">Professional Profiles</span><span>03</span></div>
+      <div class="m-grid-3">
+        <a href="https://www.linkedin.com/in/jerryfragiskatos/" target="_blank" rel="noopener" class="m-card m-text">
+          <div class="m-body"><div class="m-head"><span class="m-type">Profile</span><span class="m-yr">Current</span></div><h4>Jerry Fragiskatos — Full Career &amp; Network</h4><div class="m-src">LinkedIn — /in/jerryfragiskatos</div><span class="m-ext">Connect ↗</span></div>
+        </a>
+        <a href="https://theorg.com/org/apex-fusion/org-chart/jerry-fragiskatos" target="_blank" rel="noopener" class="m-card m-text">
+          <div class="m-body"><div class="m-head"><span class="m-type">Profile</span><span class="m-yr">Current</span></div><h4>Executive Profile &amp; Org Chart</h4><div class="m-src">The Org — Dell, CSC, IOHK, HAL8, Apex Fusion</div><span class="m-ext">View ↗</span></div>
+        </a>
+        <a href="https://iq.wiki/wiki/jerry-fragiskatos" target="_blank" rel="noopener" class="m-card m-text">
+          <div class="m-body"><div class="m-head"><span class="m-type">Profile</span><span class="m-yr">Current</span></div><h4>People in Crypto — Career Milestones</h4><div class="m-src">IQ.wiki — Web3 encyclopedia</div><span class="m-ext">View ↗</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA ══════════ -->
+<section class="cta" id="contact">
+  <div class="cta-glow"></div>
+  <div class="wrap cta-inner">
+    <div class="reveal" style="display:flex;justify-content:center"><div class="label"><span class="dash"></span>§ 07 — Get in touch</div></div>
+    <h2 class="h-lg reveal">Ready to navigate the <span class="grad-text">convergence?</span></h2>
+    <p class="cta-sub reveal">Bring your hardest question in AI, blockchain, or digital-asset strategy. The first conversation is confidential, candid, and free — you'll leave with a sharper next step, whether or not we end up working together.</p>
+    <div class="reveal" style="display:flex;justify-content:center">
+      <a href="https://calendar.app.google/zqAdE3CQmZ2ea3296" target="_blank" class="btn btn-primary">
+        Schedule a consultation
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+    <div class="cta-meta reveal">
+      <span>Remote Worldwide</span><span class="sep">·</span><span>Confidential</span><span class="sep">·</span><span>No Obligation</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="wrap foot-row">
+    <div>© 2026 Odyssey Works Inc.</div>
+    <div class="foot-social">
+      <a href="https://x.com/Aces1974" target="_blank" rel="noopener" aria-label="X — @Aces1974">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+        @Aces1974
+      </a>
+      <a href="https://www.linkedin.com/in/jerryfragiskatos/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"></path></svg>
+        LinkedIn
+      </a>
+      <a href="https://t.me/satoshigreek" target="_blank" rel="noopener" aria-label="Telegram — @satoshigreek">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.94 1.5C6.16 1.5 1.5 6.16 1.5 11.94S6.16 22.38 11.94 22.38s10.44-4.66 10.44-10.44S17.72 1.5 11.94 1.5zm4.84 7.2l-1.62 7.63c-.12.54-.44.67-.89.42l-2.46-1.81-1.19 1.14c-.13.13-.24.24-.49.24l.18-2.5 4.55-4.11c.2-.18-.04-.28-.31-.1l-5.62 3.54-2.42-.76c-.53-.16-.54-.53.11-.78l9.46-3.65c.44-.16.83.1.69.78z"></path></svg>
+        @satoshigreek
+      </a>
+    </div>
+    <div><a href="mailto:ceo@odyssey-works.io">ceo@odyssey-works.io</a></div>
+  </div>
+</footer>
+
+<!-- ══════════ VIDEO LIGHTBOX ══════════ -->
+<div class="vid-modal" id="vidModal" onclick="closeVid(event)">
+  <div class="vid-frame">
+    <button class="vid-close" onclick="closeVid()" aria-label="Close video">✕</button>
+    <div id="vidHolder"></div>
+  </div>
+</div>
+
+<!-- ══════════ CHAT ══════════ -->
+<button class="chat-toggle" onclick="toggleChat()" aria-label="Open chat">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+</button>
+
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-h-l">
+      <div class="chat-dot"></div>
+      <div><h4>Odyssey Works</h4><span>Advisory Assistant</span></div>
+    </div>
+    <button class="chat-close" onclick="toggleChat()">✕</button>
+  </div>
+  <div class="chat-messages" id="chatMessages">
+    <div class="chat-msg bot">Welcome. I can answer questions about our advisory practices in AI, blockchain, digital assets, and enterprise transformation. How can I help?</div>
+  </div>
+  <div class="chat-quick" id="chatQuick">
+    <button onclick="sendQuick('What services do you offer?')">Services</button>
+    <button onclick="sendQuick('Tell me about your leadership team')">Leadership</button>
+    <button onclick="sendQuick('What is your experience with Cardano?')">Cardano</button>
+    <button onclick="sendQuick('How can I schedule a consultation?')">Book a call</button>
+  </div>
+  <div class="chat-input-wrap">
+    <input class="chat-input" id="chatInput" placeholder="Ask about our practices..." onkeydown="if(event.key==='Enter'&amp;&amp;!event.shiftKey){event.preventDefault();sendMessage()}">
+    <button class="chat-send" id="chatSend" onclick="sendMessage()" aria-label="Send">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+    </button>
+  </div>
+</div>
+
+<script>
+// nav scroll
+window.addEventListener('scroll', function(){
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 30);
+});
+// menu
+function toggleMenu(){
+  var open = document.body.classList.toggle('menu-open');
+  document.getElementById('menuOverlay').classList.toggle('open', open);
+  document.getElementById('menuOverlay').setAttribute('aria-hidden', open ? 'false' : 'true');
+  document.getElementById('menuBtn').setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape'){
+    if(document.getElementById('vidModal').classList.contains('open')) closeVid();
+    else if(document.body.classList.contains('menu-open')) toggleMenu();
+  }
+});
+// video lightbox (YouTube facade — loads the embed only on click)
+function openVid(id){
+  var h=document.getElementById('vidHolder');
+  h.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0" title="Video player" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
+  document.getElementById('vidModal').classList.add('open');
+  document.body.style.overflow='hidden';
+  return false;
+}
+function closeVid(e){
+  if(e && e.target && e.target.closest('.vid-frame')) return;
+  document.getElementById('vidModal').classList.remove('open');
+  document.getElementById('vidHolder').innerHTML='';
+  document.body.style.overflow='';
+}
+document.getElementById('menuOverlay').addEventListener('click', function(e){
+  if(e.target === this) toggleMenu();
+});
+// reveal
+(function(){
+  function show(el){ el.classList.add('visible'); el.style.setProperty('opacity','1','important'); el.style.setProperty('transform','none','important'); }
+  function initReveal(){
+    var els = document.querySelectorAll('.reveal');
+    if(!els.length) return;
+    var failsafe = setTimeout(function(){ els.forEach(show); }, 1200);
+    if(!('IntersectionObserver' in window)){
+      els.forEach(show); clearTimeout(failsafe); return;
+    }
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ show(e.target); obs.unobserve(e.target); } });
+    }, {threshold:0.05, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){ obs.observe(el); });
+    requestAnimationFrame(function(){
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      els.forEach(function(el){
+        if(el.getBoundingClientRect().top < vh){ show(el); obs.unobserve(el); }
+      });
+    });
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initReveal);
+  } else {
+    initReveal();
+  }
+  window.addEventListener('load', initReveal);
+})();
+
+// chat
+var chatOpen=false;
+function toggleChat(){ chatOpen=!chatOpen; document.getElementById('chatWindow').classList.toggle('open',chatOpen); }
+function sendQuick(t){ document.getElementById('chatQuick').style.display='none'; document.getElementById('chatInput').value=t; sendMessage(); }
+
+var kb={
+  services:{keys:['service','offer','do you do','help with','what do you','capabilities','how can you help','what can you','work on','specialize','expertise','practice','advisory'],resp:'Odyssey Works provides three core advisory practices:\n\n**1. AI Strategy & Implementation**\nGenerative AI, LLM operations, AI agent design, RAG systems, and enterprise automation.\n\n**2. Blockchain & Digital Assets**\nTokenomics, DeFi architecture, smart contracts, RWA tokenization, and regulatory compliance.\n\n**3. Digital Transformation Advisory**\nStrategic roadmapping, enterprise architecture, government consulting, and M&A technology due diligence.\n\nWhich area interests you most?'},
+  leadership:{keys:['leader','team','founder','who','background','bio','about us','about you','ceo','principal','partner','executive'],resp:'Founded by a C-suite executive combining deep technical knowledge with enterprise commercial leadership:\n\n**Blockchain**\n- CCO at IOHK / Cardano (~5 years), reporting to Charles Hoskinson\n- Co-founded Apex Fusion — $6M raised, 270+ validators, $60M+ staked\n- CEO of HAL8 — open-source interoperability\n\n**Enterprise**\n- Commercial Director at Dell, Chief Negotiator at CSC / DXC\n- $3B+ in Fortune 500 pursuits\n\n**Education**\n- McGill: B.Eng + M.Eng (Nonlinear Dynamics & Chaos Theory)\n- MBA, College des Ingenieurs (Paris)'},
+  cardano:{keys:['cardano','iohk','iog','hoskinson','charles','ada','ouroboros','plutus','haskell','proof of stake','staking'],resp:'Our founder served as **Chief Commercial Officer at IOHK** (now IOG) for nearly five years, reporting directly to **Charles Hoskinson**. Led commercial strategy, enterprise partnerships, and go-to-market for one of the world\'s largest proof-of-stake ecosystems — across smart contracts (Plutus), staking, governance, and enterprise adoption with governments and Fortune 500 partners globally.'},
+  ai:{keys:['ai','artificial intelligence','llm','gpt','claude','machine learning','agent','rag','automation','generative','prompt'],resp:'Our AI practice helps organizations harness AI effectively:\n\n**Strategy** — readiness evaluation, use-case prioritization, build vs. buy, ROI modeling\n\n**Implementation** — LLM deployment, agent design, RAG pipelines, enterprise automation\n\n**Governance** — responsible AI frameworks, model monitoring, team upskilling\n\nReady to discuss your roadmap? https://calendar.app.google/zqAdE3CQmZ2ea3296'},
+  contact:{keys:['schedule','call','book','consult','meeting','talk','contact','reach','connect','email','phone','get in touch','appointment','calendar'],resp:'Schedule a confidential consultation directly:\n\n**Book a call:** https://calendar.app.google/zqAdE3CQmZ2ea3296\n\nWe work with clients globally. All initial consultations are confidential with no obligation.'},
+  location:{keys:['location','where','office','based','address','remote','global','worldwide'],resp:'We work with clients across the US and internationally — in person and remotely. Schedule a confidential conversation: https://calendar.app.google/zqAdE3CQmZ2ea3296'},
+  enterprise:{keys:['dell','dxc','csc','enterprise','fortune','corporate','negotiat','procurement','deal','contract','billion'],resp:'**Dell Technologies** — Commercial Director driving large-scale technology solutions.\n\n**CSC / DXC** — Chief Negotiator managing complex multi-year enterprise agreements.\n\n**Achievements:**\n- $3B+ in successful Fortune 500 pursuits\n- Deep experience in procurement, RFP strategy, and contract negotiation\n- Track record across telecom, financial services, government, and technology'},
+  tokenization:{keys:['token','rwa','real estate','asset','defi','tokeniz','nft','security token','digital asset','stablecoin','cbdc'],resp:'**Real-World Asset Tokenization** — currently structuring a $100M tokenized real estate engagement.\n\n**DeFi & Token Engineering** — tokenomics, liquidity strategy, smart contract architecture, treasury management.\n\n**Digital Identity** — DID solutions, wallet infrastructure, cross-chain interoperability.\n\nLet\'s discuss: https://calendar.app.google/zqAdE3CQmZ2ea3296'},
+  apex:{keys:['apex','fusion','tri-chain','tri chain','trichain','validator','staked'],resp:'**Apex Fusion** — a tri-chain blockchain architecture solving scalability, interoperability, and specialization.\n\n**Traction:** $6M raised · 270+ validators · $60M+ staked.\n\nOur founder is a co-founder, deeply involved in strategy, architecture, and ecosystem growth.'},
+  hal8:{keys:['hal8','hal 8','interoperab','open source','cross-chain','cross chain','bridge'],resp:'**HAL8** is an open-source blockchain interoperability platform enabling seamless communication and value transfer across networks. Our founder serves as CEO, leading technical vision and go-to-market.'},
+  transformation:{keys:['transform','digital transformation','strategy','roadmap','government','change management','moderniz','legacy','migration','cloud'],resp:'Our Digital Transformation practice:\n\n**Strategic Planning** — landscape assessment, multi-year roadmapping, board-level strategy\n\n**Execution** — program governance, vendor management, change management, KPI tracking\n\n**Sectors** — government, financial services, telecom, healthcare, technology\n\nhttps://calendar.app.google/zqAdE3CQmZ2ea3296'},
+  pipeline:{keys:['pipeline','engagement','current','active','project','working on','deal','acquisition','confidential','100m','150m'],resp:'**$100M — Tokenized Real Estate** (In Progress)\n**$150M — Strategic Acquisition** (In Progress)\n**Apex Fusion** (Active) — $6M raised, 270+ validators, $60M+ staked.\n\nAll engagements are handled with strict confidentiality.'},
+  education:{keys:['education','degree','mcgill','university','mba','engineer','chaos theory','nonlinear','college des ingenieurs','school','academic'],resp:'**McGill University**\n- B.Eng + M.Eng (Nonlinear Dynamics & Chaos Theory)\n\n**College des Ingenieurs (Paris)**\n- MBA combining engineering rigor with business strategy\n\nA rare combination of mathematical training and business acumen.'},
+  pricing:{keys:['price','pricing','cost','rate','fee','how much','budget','invest','charge','roi'],resp:'Each engagement is custom-scoped:\n\n- **Advisory retainers** for ongoing guidance\n- **Project-based engagements** with defined scope\n- **Fractional C-suite** for senior technology leadership\n\nWe start by understanding your objectives: https://calendar.app.google/zqAdE3CQmZ2ea3296'},
+  why:{keys:['why','different','unique','differentiator','competitive','advantage','better','stand out','versus','vs'],resp:'**1. Builder + Advisor** — co-founded Apex Fusion & HAL8, negotiated $3B+ in deals.\n**2. Cross-Domain** — AI, blockchain, AND enterprise.\n**3. C-Suite Credibility** — reported to Charles Hoskinson, presented to boards.\n**4. Depth + Acumen** — Chaos Theory engineering + MBA.\n**5. Skin in the Game** — active operating roles.'},
+  hello:{keys:['hello','hi','hey','good morning','good afternoon','howdy','greetings'],resp:'Hello. I can help with our services, leadership background, current engagements, or scheduling a call. What would you like to know?'},
+  thanks:{keys:['thank','thanks','thx','appreciate','helpful'],resp:'You\'re welcome. To take the next step, schedule a confidential consultation at https://calendar.app.google/zqAdE3CQmZ2ea3296'}
+};
+var defaultResponse='That\'s a great question. While it\'s beyond what I can answer directly, our team would be happy to discuss it.\n\nI can help with our **services**, **leadership**, **current engagements**, or **scheduling a consultation**.\n\nBook directly: https://calendar.app.google/zqAdE3CQmZ2ea3296';
+function getResponse(msg){
+  var lower=msg.toLowerCase().replace(/[^a-z0-9\s]/g,'');var words=lower.split(/\s+/);
+  var best=null,bestScore=0;
+  Object.values(kb).forEach(function(entry){
+    var score=0;
+    entry.keys.forEach(function(key){var k=key.toLowerCase();if(lower.indexOf(k)!==-1)score+=k.split(/\s+/).length*2;words.forEach(function(w){if(w===k)score+=1;});});
+    if(score>bestScore){bestScore=score;best=entry;}
+  });
+  if(best&&bestScore>=1)return best.resp;
+  return defaultResponse;
+}
+function addMessage(text,cls){
+  var m=document.getElementById('chatMessages');var d=document.createElement('div');d.className='chat-msg '+cls;
+  text=text.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
+  text=text.replace(/(https:\/\/[^\s<]+)/g,'<a href="$1" target="_blank">$1</a>');
+  text=text.replace(/\n/g,'<br>');d.innerHTML=text;m.appendChild(d);m.scrollTop=m.scrollHeight;return d;
+}
+function sendMessage(){
+  var input=document.getElementById('chatInput');var msg=input.value.trim();if(!msg)return;
+  input.value='';addMessage(msg,'user');
+  var btn=document.getElementById('chatSend');btn.disabled=true;
+  var typing=addMessage('Thinking…','bot typing');
+  setTimeout(function(){typing.remove();addMessage(getResponse(msg),'bot');btn.disabled=false;},400+Math.random()*500);
+}
+</script>
+
+
+
+</body></html>
