@@ -14,6 +14,8 @@ odyssey-works-site/
 ├── assets/
 │   ├── logo.png        # brand mark / favicon
 │   └── fonts/          # Space Grotesk + Space Mono (self-hosted woff2)
+├── dist/
+│   └── odyssey-works-standalone.html   # portable single-file build (assets inlined)
 └── README.md
 ```
 

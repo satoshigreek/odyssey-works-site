@@ -7,8 +7,9 @@ Thumbs.db
 
 # Dependency / build dirs (none used today, but safe defaults)
 node_modules/
-dist/
 .cache/
+
+# Note: dist/ is tracked on purpose — it holds the portable single-file build.
 
 # Logs
 *.log
