@@ -5,10 +5,47 @@
 <script>document.documentElement.className+=' js';</script>
 <title>Odyssey Works — AI, Blockchain &amp; Digital-Asset Advisory for Enterprise &amp; Government</title>
 <meta name="description" content="Board-level advisory at the convergence of AI, blockchain, and digital assets. Led by the former Chief Commercial Officer of Cardano / IOHK — $3B+ in enterprise pursuits won, $60M+ staked, 270+ validators live. Book a confidential consultation.">
+<meta name="keywords" content="AI advisory, blockchain advisory, digital asset advisory, tokenization, RWA, Cardano, IOHK, enterprise blockchain, board advisory, DeFi strategy, validators, staking, government blockchain consulting">
+<meta name="author" content="Odyssey Works Inc.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0A0F1A">
+<link rel="canonical" href="https://www.odyssey-works.io/">
+<!-- Open Graph -->
+<meta property="og:site_name" content="Odyssey Works">
 <meta property="og:title" content="Odyssey Works — AI, Blockchain &amp; Digital-Asset Advisory">
 <meta property="og:description" content="From pilots to production in AI, blockchain, and tokenized assets. Led by the former CCO of Cardano / IOHK.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://www.odyssey-works.io/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.odyssey-works.io/assets/logo.png">
+<meta property="og:image:alt" content="Odyssey Works">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Odyssey Works — AI, Blockchain &amp; Digital-Asset Advisory">
+<meta name="twitter:description" content="From pilots to production in AI, blockchain, and tokenized assets. Led by the former CCO of Cardano / IOHK.">
+<meta name="twitter:image" content="https://www.odyssey-works.io/assets/logo.png">
+<meta name="twitter:site" content="@Aces1974">
 <link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Odyssey Works Inc.",
+  "url": "https://www.odyssey-works.io/",
+  "logo": "https://www.odyssey-works.io/assets/logo.png",
+  "image": "https://www.odyssey-works.io/assets/logo.png",
+  "description": "Board-level advisory at the convergence of AI, blockchain infrastructure, and digital assets. Led by the former Chief Commercial Officer of Cardano / IOHK.",
+  "email": "ceo@odyssey-works.io",
+  "areaServed": "Worldwide",
+  "knowsAbout": ["Artificial Intelligence", "Blockchain", "Digital Assets", "Tokenization", "DeFi", "Real-World Asset Tokenization", "Enterprise Strategy"],
+  "sameAs": [
+    "https://x.com/Aces1974",
+    "https://www.linkedin.com/in/jerryfragiskatos/",
+    "https://t.me/satoshigreek"
+  ]
+}
+</script>
 <style>/* vietnamese */
 @font-face {
   font-family: 'Space Grotesk';
@@ -767,7 +804,7 @@ footer{padding:40px 0;border-top:var(--rule)}
 @media(max-width:980px){
   .wrap{padding:0 24px}
   .hero{padding:150px 0 80px}
-  .hero-net{display:none}
+  .hero-net{width:100%;opacity:.3}
   .hero-stats{grid-template-columns:1fr 1fr}
   .hstat{padding:24px 20px 24px 0}
   .hstat:nth-child(2){border-right:none;padding-right:0}
@@ -929,10 +966,10 @@ footer{padding:40px 0;border-top:var(--rule)}
     </div>
 
     <div class="hero-stats">
-      <div class="hstat"><div class="hstat-num grad-text">$3B+</div><div class="hstat-label">Pursuits Won</div></div>
-      <div class="hstat"><div class="hstat-num">20+</div><div class="hstat-label">Years Enterprise</div></div>
-      <div class="hstat"><div class="hstat-num">270+</div><div class="hstat-label">Validators Live</div></div>
-      <div class="hstat"><div class="hstat-num">$60M+</div><div class="hstat-label">Assets Staked</div></div>
+      <div class="hstat"><div class="hstat-num grad-text" data-count="3" data-prefix="$" data-suffix="B+">$3B+</div><div class="hstat-label">Pursuits Won</div></div>
+      <div class="hstat"><div class="hstat-num" data-count="20" data-suffix="+">20+</div><div class="hstat-label">Years Enterprise</div></div>
+      <div class="hstat"><div class="hstat-num" data-count="270" data-suffix="+">270+</div><div class="hstat-label">Validators Live</div></div>
+      <div class="hstat"><div class="hstat-num" data-count="60" data-prefix="$" data-suffix="M+">$60M+</div><div class="hstat-label">Assets Staked</div></div>
     </div>
   </div>
 </section>
@@ -1357,6 +1394,48 @@ document.getElementById('menuOverlay').addEventListener('click', function(e){
     initReveal();
   }
   window.addEventListener('load', initReveal);
+})();
+
+// stat count-up
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function fmt(el, val){
+    var pre = el.getAttribute('data-prefix') || '';
+    var suf = el.getAttribute('data-suffix') || '';
+    el.textContent = pre + Math.round(val) + suf;
+  }
+  function run(el){
+    if(el.dataset.counted) return;
+    el.dataset.counted = '1';
+    var target = parseFloat(el.getAttribute('data-count'));
+    if(isNaN(target)) return;
+    if(reduce){ fmt(el, target); return; }
+    var dur = 1100, start = null;
+    function step(ts){
+      if(start === null) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3); // easeOutCubic — fast then settle
+      fmt(el, target * eased);
+      if(p < 1){ requestAnimationFrame(step); } else { fmt(el, target); }
+    }
+    requestAnimationFrame(step);
+  }
+  function init(){
+    var els = document.querySelectorAll('.hstat-num[data-count]');
+    if(!els.length) return;
+    if(!('IntersectionObserver' in window)){
+      els.forEach(run); return;
+    }
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ run(e.target); obs.unobserve(e.target); } });
+    }, {threshold:0.4});
+    els.forEach(function(el){ obs.observe(el); });
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 })();
 
 // chat
