@@ -314,7 +314,7 @@ img{display:block;max-width:100%}
   padding:16px 0;
 }
 .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:40px}
-.brand{display:flex;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:14px}
 .nav-ticker{
   display:flex;align-items:center;gap:11px;
   margin-left:18px;padding-left:18px;
@@ -326,13 +326,13 @@ img{display:block;max-width:100%}
 .nav-ticker .sep{color:var(--muted)}
 .nav-ticker .dot{flex-shrink:0}
 .brand-mark{
-  height:30px;width:auto;
+  height:clamp(40px,9vw,52px);width:auto;
   display:block;flex-shrink:0;
 }
 .brand-name{
   font-family:var(--sans);
   font-weight:700;
-  font-size:1.05rem;
+  font-size:clamp(1.5rem,5vw,2rem);
   letter-spacing:0.04em;
   text-transform:uppercase;
   color:var(--text);
@@ -340,11 +340,11 @@ img{display:block;max-width:100%}
 }
 .nav-cta{
   font-family:var(--mono);
-  font-size:12px;
+  font-size:clamp(14px,3.6vw,16px);
   letter-spacing:0.08em;
   text-transform:uppercase;
   color:var(--text);
-  padding:9px 18px;
+  padding:12px 22px;
   border:1px solid var(--border);
   transition:border-color .2s,background .2s,color .2s;
 }
@@ -352,19 +352,19 @@ img{display:block;max-width:100%}
 
 /* ── menu button ── */
 .menu-btn{
-  display:inline-flex;align-items:center;gap:11px;
-  font-family:var(--mono);font-size:12px;font-weight:700;
+  display:inline-flex;align-items:center;gap:13px;
+  font-family:var(--mono);font-size:clamp(15px,4vw,17px);font-weight:700;
   letter-spacing:0.1em;text-transform:uppercase;color:var(--text);
   background:none;cursor:pointer;
-  padding:9px 16px;
+  padding:13px 22px;
   border:1px solid var(--border);
   transition:border-color .2s,color .2s;
 }
 .menu-btn:hover{border-color:var(--mint);color:var(--mint)}
-.menu-btn-bars{display:inline-flex;flex-direction:column;gap:4px;width:16px}
-.menu-btn-bars span{display:block;height:1.5px;width:100%;background:currentColor;transition:transform .3s,opacity .3s}
-body.menu-open .menu-btn-bars span:first-child{transform:translateY(2.75px) rotate(45deg)}
-body.menu-open .menu-btn-bars span:last-child{transform:translateY(-2.75px) rotate(-45deg)}
+.menu-btn-bars{display:inline-flex;flex-direction:column;gap:5px;width:22px}
+.menu-btn-bars span{display:block;height:2px;width:100%;background:currentColor;transition:transform .3s,opacity .3s}
+body.menu-open .menu-btn-bars span:first-child{transform:translateY(3.5px) rotate(45deg)}
+body.menu-open .menu-btn-bars span:last-child{transform:translateY(-3.5px) rotate(-45deg)}
 
 /* ── menu overlay ── */
 .menu-overlay{
