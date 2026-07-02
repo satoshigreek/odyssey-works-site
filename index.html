@@ -551,10 +551,17 @@ body.menu-open .menu-btn-bars span:last-child{transform:translateY(-3.5px) rotat
 }
 .logos-marquee{
   position:relative;overflow:hidden;
+  touch-action:pan-y;cursor:grab;
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);
   mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);
 }
-.logos-track{display:flex;align-items:center;width:max-content;animation:logoScroll 80s linear infinite}
+.logos-marquee.dragging{cursor:grabbing}
+.logos-track{
+  display:flex;align-items:center;width:max-content;
+  animation:logoScroll 80s linear infinite;
+  user-select:none;-webkit-user-select:none;
+}
+.logos-track img{pointer-events:none;-webkit-user-drag:none}
 .logos-marquee:hover .logos-track{animation-play-state:paused}
 .logo-tile{
   flex-shrink:0;height:clamp(80px,12vw,104px);margin-right:24px;
@@ -1410,6 +1417,97 @@ document.getElementById('menuOverlay').addEventListener('click', function(e){
       entries.forEach(function(e){ if(e.isIntersecting){ run(e.target); obs.unobserve(e.target); } });
     }, {threshold:0.4});
     els.forEach(function(el){ obs.observe(el); });
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+
+// logo marquee — auto-scroll with drag (mouse) / swipe (touch); resumes when released
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if(reduce || !('PointerEvent' in window)) return; // keep the CSS-only fallback
+
+  var DURATION = 80;   // s per loop — matches the CSS animation pace
+  var MIN_VEL = 30;    // px/s — below this, fling momentum hands back to auto-scroll
+  var MAX_VEL = 2500;  // px/s — clamp wild flings
+
+  function init(){
+    var marquee = document.querySelector('.logos-marquee');
+    var track = document.querySelector('.logos-track');
+    if(!marquee || !track) return;
+    track.style.animation = 'none';
+
+    var half = 0;
+    function measure(){ half = track.scrollWidth / 2; }
+    measure();
+    window.addEventListener('resize', measure);
+
+    var offset = 0, vel = 0;
+    var dragging = false, hovering = false;
+    var startX = 0, startOffset = 0, lastX = 0, lastT = 0;
+
+    // the track is two identical halves, so shifting by half a track is invisible
+    function wrap(x){
+      if(!half) return x;
+      x = x % half;
+      if(x > 0) x -= half;
+      return x;
+    }
+    function apply(){ track.style.transform = 'translate3d(' + offset + 'px,0,0)'; }
+
+    var last = null;
+    function tick(now){
+      if(last === null) last = now;
+      var dt = Math.min((now - last) / 1000, 0.1);
+      last = now;
+      if(!dragging){
+        if(Math.abs(vel) > MIN_VEL){
+          offset += vel * dt;
+          vel *= Math.pow(0.04, dt); // fling decays over ~1s
+        } else if(!hovering){
+          vel = 0;
+          offset -= (half / DURATION) * dt;
+        }
+        offset = wrap(offset);
+        apply();
+      }
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+
+    marquee.addEventListener('pointerdown', function(e){
+      if(e.pointerType === 'mouse' && e.button !== 0) return;
+      dragging = true; vel = 0;
+      startX = lastX = e.clientX; startOffset = offset;
+      lastT = performance.now();
+      marquee.classList.add('dragging');
+      if(marquee.setPointerCapture) marquee.setPointerCapture(e.pointerId);
+    });
+    marquee.addEventListener('pointermove', function(e){
+      if(!dragging) return;
+      offset = wrap(startOffset + (e.clientX - startX));
+      apply();
+      var now = performance.now();
+      if(now > lastT){
+        vel = (e.clientX - lastX) / (now - lastT) * 1000;
+        if(vel > MAX_VEL) vel = MAX_VEL;
+        if(vel < -MAX_VEL) vel = -MAX_VEL;
+        lastX = e.clientX; lastT = now;
+      }
+    });
+    function release(){
+      if(!dragging) return;
+      dragging = false;
+      marquee.classList.remove('dragging');
+    }
+    marquee.addEventListener('pointerup', release);
+    marquee.addEventListener('pointercancel', release);
+    marquee.addEventListener('pointerenter', function(e){ if(e.pointerType === 'mouse') hovering = true; });
+    marquee.addEventListener('pointerleave', function(e){ if(e.pointerType === 'mouse') hovering = false; });
+    marquee.addEventListener('dragstart', function(e){ e.preventDefault(); });
   }
   if(document.readyState === 'loading'){
     document.addEventListener('DOMContentLoaded', init);
